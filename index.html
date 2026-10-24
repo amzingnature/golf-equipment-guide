@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golf Equipment Guide: Clubs, Balls, Bags & Essentials</title>
+  <meta name="description" content="Explore golf equipment, from clubs and golf balls to bags, shoes, and accessories. Learn what each item does and how to choose gear for your game.">
+  <meta name="theme-color" content="#102b25">
+
+  <!-- Replace this canonical URL if you publish the page at another URL -->
+  <link rel="canonical" href="https://bitbucket.org/YOUR_WORKSPACE/golf-equipment-guide">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Golf Equipment Guide: Build Your Setup">
+  <meta property="og:description" content="A practical guide to golf clubs, balls, bags, shoes, and useful accessories.">
+
+  <style>
+    :root {
+      --forest: #102b25;
+      --forest2: #1d473b;
+      --mint: #c8f169;
+      --cream: #f7f5ed;
+      --paper: #fffefa;
+      --ink: #172b27;
+      --muted: #61736c;
+      --line: #e1e8df;
+      --orange: #f49a55;
+      --blue: #dceeff;
+      --lavender: #ece6ff;
+      --shadow: 0 18px 50px rgba(16,43,37,.09);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .topbar {
+      background: var(--forest);
+      color: #f5f7ef;
+      font-size: .86rem;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .topbar a {
+      color: var(--mint);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    header {
+      background: rgba(247,245,237,.95);
+      border-bottom: 1px solid rgba(16,43,37,.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 900;
+      letter-spacing: -.04em;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: var(--mint);
+      display: grid;
+      place-items: center;
+      color: var(--forest);
+      font-size: 24px;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: .68rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      font-size: .91rem;
+      font-weight: 750;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      color: #39534b;
+    }
+
+    .navlinks a:hover { color: #719b23; }
+
+    .nav-cta, .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      background: var(--mint);
+      color: var(--forest);
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 850;
+      border: 0;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .nav-cta:hover, .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(200,241,105,.28);
+    }
+
+    .hero {
+      padding: 72px 0 60px;
+      background:
+        radial-gradient(circle at 84% 18%, rgba(200,241,105,.18), transparent 27%),
+        linear-gradient(135deg, var(--forest), var(--forest2));
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--mint);
+      font-size: .77rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(244,154,85,.15);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      font-size: clamp(2.6rem, 5.5vw, 4.65rem);
+      line-height: 1.04;
+      letter-spacing: -.065em;
+      margin: 18px 0 22px;
+    }
+
+    h1 em {
+      color: var(--mint);
+      font-style: normal;
+    }
+
+    .hero-copy {
+      font-size: 1.1rem;
+      color: #d9e6df;
+      max-width: 590px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 28px 0 25px;
+    }
+
+    .button-ghost {
+      border: 1px solid rgba(255,255,255,.32);
+      color: white;
+      background: transparent;
+    }
+
+    .button-ghost:hover {
+      background: rgba(255,255,255,.08);
+      box-shadow: none;
+    }
+
+    .trust-row {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: #c5d5cd;
+      font-size: .84rem;
+    }
+
+    .hero-art {
+      min-height: 390px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    .orb {
+      width: min(360px, 85%);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #d9f88e, #9cc846);
+      position: relative;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 30px 80px rgba(0,0,0,.24);
+    }
+
+    .orb::before {
+      content: "";
+      position: absolute;
+      inset: 20px;
+      border: 1px dashed rgba(16,43,37,.28);
+      border-radius: 50%;
+    }
+
+    .golf-ball {
+      width: 165px;
+      aspect-ratio: 1;
+      background: radial-gradient(circle at 32% 27%, #fff, #e8ece4 68%, #b6c4b8);
+      border-radius: 50%;
+      box-shadow: 18px 24px 32px rgba(16,43,37,.24);
+      position: relative;
+      z-index: 1;
+    }
+
+    .golf-ball::after {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      border-radius: 50%;
+      background-image: radial-gradient(circle, rgba(91,112,96,.27) 1.5px, transparent 2px);
+      background-size: 15px 15px;
+    }
+
+    .floating-card {
+      position: absolute;
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 18px;
+      padding: 14px 17px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: .9rem;
+    }
+
+    .floating-card small {
+      display: block;
+      color: var(--muted);
+      font-size: .73rem;
+      font-weight: 600;
+    }
+
+    .float-one { top: 32px; left: 0; transform: rotate(-4deg); }
+    .float-two { right: 0; bottom: 36px; transform: rotate(4deg); }
+
+    .icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-size: 23px;
+    }
+
+    .lime { background: #e8f7c9; color: #4c711b; }
+    .peach { background: #ffeadb; color: #a65320; }
+    .blue { background: var(--blue); color: #31638c; }
+    .lav { background: var(--lavender); color: #6551a4; }
+
+    .stats {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 24px 0;
+    }
+
+    .stat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 4px 12px;
+    }
+
+    .stat + .stat { border-left: 1px solid var(--line); }
+    .stat strong { display: block; font-size: .96rem; }
+    .stat span { font-size: .81rem; }
+
+    section { padding: 76px 0; }
+
+    .section-head {
+      max-width: 700px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .kicker {
+      font-size: .76rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #6b8d2d;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3.7vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -.05em;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.03rem;
+      margin-bottom: 0;
+    }
+
+    .heading-accent {
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+    }
+
+    .heading-accent::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      height: 11px;
+      background: var(--mint);
+      left: 0;
+      right: -3px;
+      bottom: 3px;
+      border-radius: 8px;
+      transform: rotate(-1deg);
+    }
+
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .equipment-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: 0 6px 22px rgba(16,43,37,.025);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .equipment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .equipment-card h3 {
+      font-size: 1.15rem;
+      letter-spacing: -.025em;
+      margin: 17px 0 8px;
+    }
+
+    .equipment-card p {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-bottom: 15px;
+    }
+
+    .mini-label {
+      font-size: .75rem;
+      color: #547326;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    .tip {
+      background: #f0f7e5;
+      border-radius: 12px;
+      padding: 11px 12px;
+      font-size: .82rem;
+      color: #405a2d;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .side-panel {
+      background: var(--forest);
+      color: white;
+      border-radius: 26px;
+      padding: 30px;
+      position: sticky;
+      top: 100px;
+    }
+
+    .side-panel h3 {
+      font-size: 1.55rem;
+      line-height: 1.2;
+      letter-spacing: -.04em;
+    }
+
+    .side-panel p { color: #c9d8d0; }
+    .side-panel .button { margin-top: 8px; }
+
+    .steps { display: grid; gap: 13px; }
+
+    .step {
+      display: grid;
+      grid-template-columns: 55px 1fr;
+      gap: 17px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 21px;
+      border-radius: 18px;
+    }
+
+    .step-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      background: #eaf5d5;
+      color: #4c711b;
+      display: grid;
+      place-items: center;
+      font-weight: 950;
+    }
+
+    .step h3 { margin: 1px 0 5px; font-size: 1.04rem; }
+    .step p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    .callout {
+      background: linear-gradient(110deg, #e8f6c9, #f5f9e9);
+      border: 1px solid #d6e8b3;
+      border-radius: 24px;
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .callout h3 {
+      font-size: 1.35rem;
+      letter-spacing: -.035em;
+      margin-bottom: 5px;
+    }
+
+    .callout p { margin: 0; color: #516548; font-size: .92rem; }
+    .callout .button { background: var(--forest); color: white; white-space: nowrap; }
+
+    /* Separate FAQ design */
+    .faq-section { background: #edf1e8; }
+
+    .faq-wrap { max-width: 820px; margin: auto; }
+
+    .faq-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      margin-bottom: 34px;
+      text-align: center;
+    }
+
+    .faq-heading .icon-box {
+      width: 52px;
+      height: 52px;
+      background: var(--lavender);
+      color: #6551a4;
+      font-size: 28px;
+    }
+
+    .faq-heading h2 { margin: 0; }
+
+    .faq-item {
+      background: var(--paper);
+      border: 1px solid #dce5d8;
+      border-radius: 16px;
+      margin: 12px 0;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      font-weight: 850;
+      color: #203b32;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary::after {
+      content: "+";
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      background: #eaf5d5;
+      color: #42651c;
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+      background: var(--forest);
+      color: var(--mint);
+    }
+
+    .faq-answer {
+      padding: 0 22px 21px;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .faq-answer p { margin: 0; }
+
+    .final-cta {
+      padding: 68px 0;
+      background: var(--forest);
+      color: white;
+    }
+
+    .final-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .final-inner h2 { max-width: 650px; margin-bottom: 12px; }
+    .final-inner p { color: #c9d8d0; margin: 0; max-width: 620px; }
+
+    footer {
+      background: #0b211c;
+      color: #a9bdb3;
+      padding: 24px 0;
+      font-size: .83rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--mint);
+      text-decoration: none;
+      font-weight: 750;
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid, .two-col { grid-template-columns: 1fr; }
+      .hero-art { min-height: 330px; max-width: 560px; width: 100%; margin: auto; }
+      .equipment-grid { grid-template-columns: repeat(2, 1fr); }
+      .side-panel { position: static; }
+      .navlinks { gap: 13px; }
+      .navlinks a:not(.nav-cta) { display: none; }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width: calc(100% - 28px); }
+      .topbar-inner { font-size: .76rem; }
+      .nav { min-height: 66px; }
+      .brand { font-size: .9rem; }
+      .nav-cta { padding: 10px 13px; font-size: .82rem; }
+      .hero { padding: 50px 0 38px; }
+      .hero-grid { gap: 12px; }
+      h1 { font-size: 2.65rem; }
+      .hero-copy { font-size: 1rem; }
+      .hero-art { min-height: 280px; }
+      .orb { width: 245px; }
+      .golf-ball { width: 125px; }
+      .float-one { left: -2px; top: 15px; }
+      .float-two { right: -2px; bottom: 12px; }
+      .floating-card { padding: 10px 12px; font-size: .8rem; }
+      .stats-grid { grid-template-columns: 1fr; gap: 0; padding: 10px 0; }
+      .stat { justify-content: flex-start; padding: 13px 8px; }
+      .stat + .stat { border-left: 0; border-top: 1px solid var(--line); }
+      section { padding: 54px 0; }
+      .equipment-grid { grid-template-columns: 1fr; }
+      .equipment-card { padding: 22px; }
+      .callout, .final-inner { align-items: flex-start; flex-direction: column; }
+      .step { grid-template-columns: 43px 1fr; padding: 16px; gap: 12px; }
+      .step-num { width: 40px; height: 40px; }
+      .faq-heading { align-items: flex-start; }
+      .faq-item summary { padding: 17px; }
+      .faq-answer { padding: 0 17px 18px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Golf Equipment Guide: Clubs, Balls, Bags & Essentials",
+    "description": "A practical overview of essential golf equipment and how to choose gear for your game.",
+    "about": {
+      "@type": "Thing",
+      "name": "Golf equipment"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span>THE PRACTICAL GOLFER'S FIELD GUIDE</span>
+      <span>Play smarter. Pack lighter. <a href="https://golfdecode.com/">Explore GolfDecode ↗</a></span>
+    </div>
+  </div>
+
+  <header>
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Fairway Fieldnotes home">
+        <span class="brand-mark" aria-hidden="true">⚑</span>
+        <span>FAIRWAY <small>FIELDNOTES / GOLF GEAR</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#essentials">Equipment</a>
+        <a href="#choose">How to choose</a>
+        <a href="#faqs">FAQs</a>
+        <a class="nav-cta" href="https://golfdecode.com/">Visit GolfDecode ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Your golf gear, decoded</div>
+          <h1>Good golf starts with the <em>right equipment.</em></h1>
+          <p class="hero-copy">
+            From the clubs in your bag to the shoes on your feet, the right setup helps you feel prepared, play comfortably, and focus on the next shot. Start with the essentials—not every gadget on the shelf.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#essentials">Explore the essentials ↓</a>
+            <a class="button button-ghost" href="https://golfdecode.com/">Discover GolfDecode ↗</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Beginner-friendly</span>
+            <span>◎ Practical buying tips</span>
+            <span>↗ Focus on fit</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of a golf ball">
+          <div class="orb"><div class="golf-ball"></div></div>
+          <div class="floating-card float-one">
+            <span class="icon-box peach">🏌️</span>
+            <span>Club selection<small>Start with your swing</small></span>
+          </div>
+          <div class="floating-card float-two">
+            <span class="icon-box blue">⛳</span>
+            <span>Gear that fits<small>Comfort over hype</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="wrap stats-grid">
+        <div class="stat">
+          <span class="icon-box lime">✦</span>
+          <div><strong>Start with essentials</strong><span>Buy what you will actually use</span></div>
+        </div>
+        <div class="stat">
+          <span class="icon-box peach">↗</span>
+          <div><strong>Improve the fit</strong><span>Comfort and control matter</span></div>
+        </div>
+        <div class="stat">
+          <span class="icon-box lav">✓</span>
+          <div><strong>Choose with confidence</strong><span>Compare before spending</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="essentials">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">The gear checklist</div>
+          <h2>Golf equipment, <span class="heading-accent">piece by piece.</span></h2>
+          <p>You do not need the most expensive kit to get started. Understand the job each item does, then choose based on your experience, comfort, and budget.</p>
+        </div>
+
+        <div class="equipment-grid">
+          <article class="equipment-card">
+            <span class="icon-box lime">🏌️</span>
+            <div class="mini-label">01 / The main tools</div>
+            <h3>Golf clubs</h3>
+            <p>Drivers, woods, hybrids, irons, wedges, and putters each support different shots. Begin with a balanced set you can control rather than chasing maximum distance.</p>
+            <div class="tip">Quick tip: Check club length, grip size, and how comfortably you can set up to the ball.</div>
+          </article>
+
+          <article class="equipment-card">
+            <span class="icon-box peach">⚪</span>
+            <div class="mini-label">02 / Every shot</div>
+            <h3>Golf balls</h3>
+            <p>Golf balls differ in feel, construction, and performance. Beginners who lose a few balls per round may prefer affordable options while learning consistency.</p>
+            <div class="tip">Quick tip: Pick a ball you can afford to play regularly and learn how it feels around the green.</div>
+          </article>
+
+          <article class="equipment-card">
+            <span class="icon-box blue">🎒</span>
+            <div class="mini-label">03 / Carry it all</div>
+            <h3>Golf bag</h3>
+            <p>A bag keeps clubs organised and accessories close at hand. Stand bags suit walking golfers; cart bags can work well when riding or using a trolley.</p>
+            <div class="tip">Quick tip: Consider weight, strap comfort, pocket layout, and how you travel to the course.</div>
+          </article>
+
+          <article class="equipment-card">
+            <span class="icon-box lav">👟</span>
+            <div class="mini-label">04 / Stable footing</div>
+            <h3>Golf shoes</h3>
+            <p>Golf shoes are designed to provide traction during the swing. Look for a secure fit and comfort for the amount of walking you expect to do.</p>
+            <div class="tip">Quick tip: Try them on with golf socks and make sure your toes have room.</div>
+          </article>
+
+          <article class="equipment-card">
+            <span class="icon-box peach">🧤</span>
+            <div class="mini-label">05 / Grip & feel</div>
+            <h3>Gloves and grips</h3>
+            <p>A glove can help manage grip and moisture, while correctly sized club grips can make the club feel more secure in your hands.</p>
+            <div class="tip">Quick tip: Replace a worn, slick glove before it becomes a distraction.</div>
+          </article>
+
+          <article class="equipment-card">
+            <span class="icon-box lime">🧢</span>
+            <div class="mini-label">06 / Small essentials</div>
+            <h3>Tees and accessories</h3>
+            <p>Tees, ball markers, a divot tool, a towel, sunscreen, and water can make a round easier. Keep your setup useful instead of overpacked.</p>
+            <div class="tip">Quick tip: Check the course rules and weather before you leave home.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="choose" style="background:#fffefa">
+      <div class="wrap two-col">
+        <aside class="side-panel">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Before you buy</div>
+          <h3>Build your bag around your game—not the adverts.</h3>
+          <p>The best equipment is the gear that suits your current ability, body, playing conditions, and budget.</p>
+          <a class="button" href="https://golfdecode.com/">Explore more golf resources ↗</a>
+        </aside>
+
+        <div>
+          <div class="kicker">A smarter buying process</div>
+          <h2>Four checks to make <span class="heading-accent">before checkout.</span></h2>
+
+          <div class="steps">
+            <article class="step">
+              <div class="step-num">01</div>
+              <div><h3>Be honest about your experience</h3><p>New golfers usually benefit from forgiving, easy-to-use equipment. More advanced players may have specific needs based on ball flight and shot shape.</p></div>
+            </article>
+            <article class="step">
+              <div class="step-num">02</div>
+              <div><h3>Get the fit right</h3><p>Club length, shaft characteristics, grip size, and shoe fit can affect comfort and control. If possible, test equipment or seek a qualified fitting.</p></div>
+            </article>
+            <article class="step">
+              <div class="step-num">03</div>
+              <div><h3>Set a realistic budget</h3><p>Compare complete sets, individual clubs, and quality used gear. Keep money aside for balls, gloves, and other items you will replace.</p></div>
+            </article>
+            <article class="step">
+              <div class="step-num">04</div>
+              <div><h3>Try before committing</h3><p>When possible, test clubs and shoes in person. Check the return policy and inspect used clubs for damage, worn grips, and shaft condition.</p></div>
+            </article>
+          </div>
+
+          <div class="callout">
+            <div><h3>Not sure where to start?</h3><p>Explore golf guides and practical equipment advice on GolfDecode.</p></div>
+            <a class="button" href="https://golfdecode.com/">Visit GolfDecode ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faqs">
+      <div class="wrap faq-wrap">
+        <div class="faq-heading">
+          <span class="icon-box">❔</span>
+          <div>
+            <div class="kicker">Quick answers</div>
+            <h2>Golf equipment FAQs</h2>
+          </div>
+        </div>
+
+        <details class="faq-item">
+          <summary>What golf equipment does a beginner need?</summary>
+          <div class="faq-answer"><p>Start with a suitable set of clubs, golf balls, tees, a glove if you prefer one, comfortable golf shoes, and a bag. Add accessories as you discover what you use regularly.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is it better to buy a complete golf club set?</summary>
+          <div class="faq-answer"><p>A complete set can be a convenient starting point because the clubs are selected to work as a group. Compare the set's composition, build quality, fit, warranty, and price before buying.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does golf club length matter?</summary>
+          <div class="faq-answer"><p>Yes. Club length can influence posture, setup, and strike consistency. Height alone does not tell the whole story, so consider wrist-to-floor measurement, posture, and a professional fitting when practical.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Should beginners buy expensive golf balls?</summary>
+          <div class="faq-answer"><p>Not necessarily. Choose balls that fit your budget and play consistently with them while you learn. Premium balls can offer particular performance characteristics, but they are not essential for every new golfer.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can used golf equipment be a good choice?</summary>
+          <div class="faq-answer"><p>Yes, used clubs can provide value if they are in good condition and suit your game. Inspect the clubface, shaft, grip, and hosel, and buy from a seller with a clear return policy when possible.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How often should golf equipment be replaced?</summary>
+          <div class="faq-answer"><p>There is no single replacement schedule. Replace items when they are damaged, no longer fit, or have worn enough to affect use. Grips and gloves may need attention sooner than clubs.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="wrap final-inner">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Keep learning</div>
+          <h2>Make your next equipment choice a more informed one.</h2>
+          <p>Explore more golf information, practical guides, and equipment-related learning at GolfDecode.</p>
+        </div>
+        <a class="button" href="https://golfdecode.com/">Visit GolfDecode.com ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Fairway Fieldnotes. An independent golf equipment guide.</span>
+      <span>More golf reading: <a href="https://golfdecode.com/">GolfDecode</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      item.addEventListener("toggle", () => {
+        if (item.open) {
+          faqItems.forEach(other => {
+            if (other !== item) other.open = false;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
